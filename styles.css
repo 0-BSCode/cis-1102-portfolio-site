@@ -1,0 +1,74 @@
+/* Fonts */
+@font-face {
+    font-family: Barlow;
+    font-weight: 300;
+    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-Light.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 300;
+    font-style: italic;
+    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 400;
+    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 500;
+    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-Medium.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 500;
+    font-style: italic;
+    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 600;
+    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 600;
+    font-style: italic;
+    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-SemiBoldItalic.ttf');
+}
+
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 13px;
+    font-family: Barlow, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --color-moderate-violet: hsl(263, 55%, 52%);
+    --color-dark-grayish-blue: hsl(217, 19%, 35%);
+    --color-dark-blackish-blue: hsl(219, 29%, 14%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--color-white);
+}
+
+.header {
+    text-align: center;
+    font-size: 4rem;
+    margin: 3rem;
+}
