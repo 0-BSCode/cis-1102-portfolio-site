@@ -206,3 +206,16 @@ body {
     font-size: 1.4rem;
     font-style: italic;
 }
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 375px) {
+    .cards {
+        padding-inline: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 512px) {
+    .cards {
+        padding-inline: 5rem;
+    }
+}
