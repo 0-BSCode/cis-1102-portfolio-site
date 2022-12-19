@@ -47,7 +47,7 @@ members.forEach((member) => {
     {
       class: "card__skills",
     },
-    member.skills
+    `<b>Skills:</b> ${member.skills}`
   );
   const cardMotto = generateElement(
     "blockquote",
@@ -78,8 +78,3 @@ members.forEach((member) => {
   const cardContainer = document.querySelector(".cards");
   cardContainer.appendChild(card);
 });
-
-/*
-
-1. Cards should LOOK different (have member object contain card config)
-*/
