@@ -8,7 +8,7 @@ members.forEach((member) => {
 
   // Card front generation
   const cardFront = generateElement("div", {
-    class: "card__front card--bg-violet card--text-white",
+    class: `card__front ${member.cardClassConfig.bgColor} ${member.cardClassConfig.textColor}`,
   });
   const imgWrapper = generateElement("div", { class: "card__imgWrapper" });
   const img = generateElement("img", {
@@ -22,10 +22,15 @@ members.forEach((member) => {
     { class: "card__course" },
     member.course
   );
+  const cardEmail = generateElement(
+    "p",
+    { class: "card__email" },
+    `✉  ${member.email}`
+  );
 
   // Card back generation
   const cardBack = generateElement("div", {
-    class: "card__back card--bg-violet card--text-white",
+    class: `card__back ${member.cardClassConfig.bgColor} ${member.cardClassConfig.textColor}`,
   });
   const cardInformation = generateElement("div", {
     class: "card__information",
@@ -64,6 +69,7 @@ members.forEach((member) => {
   cardFront.appendChild(imgWrapper);
   cardFront.appendChild(cardName);
   cardFront.appendChild(cardCourse);
+  cardFront.appendChild(cardEmail);
 
   cardContent.appendChild(cardFront);
   cardContent.appendChild(cardBack);
