@@ -1,6 +1,7 @@
 import generateElement from "./utils/generateElement.js";
 import formatNameForImage from "./utils/formatNameForImage.js";
 import members from "./data/members.js";
+import appendChildren from "./utils/appendChildren.js";
 
 members.forEach((member) => {
   const card = generateElement("div", { class: "card" });
@@ -57,22 +58,21 @@ members.forEach((member) => {
     member.motto
   );
 
-  cardInformation.appendChild(cardDescription);
-  cardInformation.appendChild(cardSkills);
+  // Assemble front
+  const imgWrapperChildren = [img];
+  appendChildren(imgWrapper, imgWrapperChildren);
+  const cardFrontChildren = [imgWrapper, cardName, cardCourse, cardEmail];
+  appendChildren(cardFront, cardFrontChildren);
 
-  cardBack.appendChild(cardInformation);
-  cardBack.appendChild(cardMotto);
+  // Assemble back
+  const cardInformationChildren = [cardDescription, cardSkills];
+  appendChildren(cardInformation, cardInformationChildren);
+  const cardBackChildren = [cardInformation, cardMotto];
+  appendChildren(cardBack, cardBackChildren);
 
   // Assemble card
-  imgWrapper.appendChild(img);
-
-  cardFront.appendChild(imgWrapper);
-  cardFront.appendChild(cardName);
-  cardFront.appendChild(cardCourse);
-  cardFront.appendChild(cardEmail);
-
-  cardContent.appendChild(cardFront);
-  cardContent.appendChild(cardBack);
+  const cardContentChildren = [cardFront, cardBack];
+  appendChildren(cardContent, cardContentChildren);
   card.appendChild(cardContent);
 
   const cardContainer = document.querySelector(".cards");
