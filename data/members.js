@@ -17,7 +17,7 @@ const members = [
   {
     name: "Roxette Anne G. Samarinta",
     email: "roxyontherun1@gmail.com",
-    imgUrl: "./assets/images/person-man-svgrepo-com.svg",
+    imgUrl: "./assets/images/Samarinta.jpg",
     course: "Bachelor of Science in Information Technology",
     motto: "Life has a way of making your dreams come true.",
     description: "I'm easy to talk with and willingly help others in need!",
@@ -44,7 +44,7 @@ const members = [
   {
     name: "Greg Alexander S. Marayan",
     email: "xxg0dxavierxx@gmail.com",
-    imgUrl: "./assets/images/person-man-svgrepo-com.svg",
+    imgUrl: "./assets/images/Marayan.jpeg",
     course: "Bachelor of Science in Information Technology",
     motto: "Fall down 7 times, get back up 8",
     description:
