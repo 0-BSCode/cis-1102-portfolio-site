@@ -1,6 +1,6 @@
 import generateElement from "./utils/generateElement.js";
 import formatNameForImage from "./utils/formatNameForImage.js";
-import members from "./data/members.js";
+import members from "../data/members.js";
 import appendChildren from "./utils/appendChildren.js";
 
 members.forEach((member) => {

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Barlow;
+    font-weight: 300;
+    src: url('../assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-Light.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 300;
+    font-style: italic;
+    src: url('../assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 400;
+    src: url('../assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 500;
+    src: url('../assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-Medium.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 500;
+    font-style: italic;
+    src: url('../assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 600;
+    src: url('../assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Barlow;
+    font-weight: 600;
+    font-style: italic;
+    src: url('../assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-SemiBoldItalic.ttf');
+}

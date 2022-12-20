@@ -1,49 +1,4 @@
-/* Fonts */
-@font-face {
-    font-family: Barlow;
-    font-weight: 300;
-    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-Light.ttf');
-}
-
-@font-face {
-    font-family: Barlow;
-    font-weight: 300;
-    font-style: italic;
-    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-LightItalic.ttf');
-}
-
-@font-face {
-    font-family: Barlow;
-    font-weight: 400;
-    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-Regular.ttf');
-}
-
-@font-face {
-    font-family: Barlow;
-    font-weight: 500;
-    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-Medium.ttf');
-}
-
-@font-face {
-    font-family: Barlow;
-    font-weight: 500;
-    font-style: italic;
-    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-MediumItalic.ttf');
-}
-
-@font-face {
-    font-family: Barlow;
-    font-weight: 600;
-    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-SemiBold.ttf');
-}
-
-@font-face {
-    font-family: Barlow;
-    font-weight: 600;
-    font-style: italic;
-    src: url('./assets/fonts/BarlowSemiCondensed/BarlowSemiCondensed-SemiBoldItalic.ttf');
-}
-
+@import url("./fonts.css");
 
 /* CSS Reset */
 *,
@@ -86,7 +41,7 @@ body {
     background-color: transparent;
     width: 30rem;
     height: 40rem;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
 }
 
 .card:hover {
@@ -119,7 +74,6 @@ body {
 }
 
 .card__front {
-    /* background-color: #bbb; */
     color: black;
 }
 
