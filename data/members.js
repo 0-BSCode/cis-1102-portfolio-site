@@ -48,7 +48,7 @@ const members = [
     course: "Bachelor of Science in Information Technology",
     motto: "Fall down 7 times, get back up 8",
     description:
-      "I am aspiring programming wizard that has a passion for entrepreneurship and technology, creating a bridge to find a efficient yet easy way of communicating!",
+      "I am aspiring programming wizard that has a passion for entrepreneurship and technology, creating a bridge to find an efficient yet easy way of communicating!",
     skills: "C Programming, HTML, Arduino Robotics Programming",
     cardClassConfig: {
       bgColor: "card--bg-white",
